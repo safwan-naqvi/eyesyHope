@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="splash_title_name">Eyesy Hope</string>
+    <string name="splash_credit"><![CDATA[Created by Safwan & Ali]]></string>
+    <string name="splash_tagline">Your Virtual Eyes</string>
+
+    <!-- Dashboard Strings -->
+    <string name="module1_name">Book Reading</string>
+    <string name="module2_name">Object Detection</string>
+    <string name="module3_name">Color detection</string>
+    <string name="module4_name">Location sharing</string>
+    <string name="module5_name">Length Detector</string>
+    <string name="dashboard_btn_assist">Assistant</string>
+    <string name="assistant_greet">How May I Help You?</string>
+    <string name="battery">100%</string>
+    <string name="vibrateNotSupported">Vibration Not Supported</string>
+    <string name="batteryLow">Your Battery is low please charge</string>
+    <string name="batteryFull">Your Battery is fully charged</string>
+    <string name="network_connectivity_off">Your Internet is not connected! You can only use gestures to use eyesy hope</string>
+    <string name="gestureBox">Gesture Area</string>
+    <string name="assistant">Open Assistant</string>
+    <string name="tfe_od_app_name">Object Detection</string>
+    <string name="tfe_od_camera_error">Camera Error Occured</string>
+    <string name="login_blind">Login For Visual Impaired</string>
+    <string name="login_guardian">Login For Guardian</string>
+    <string name="signup_blind">Sign Up For Visual Impaired</string>
+    <string name="signup_guardian">Sign Up For Guardian</string>
+    <string name="swipe_user_login">Visual Impaired User Login</string>
+    <string name="swipe_guardian_login">Guardian Login Activity</string>
+    <string name="swipe_guardian_register">Guardian Register Activity</string>
+    <string name="search_object">Search Object</string>
+    <string name="phone_number">Enter Phone Number</string>
+    <string name="sign_in">Login</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="otp_code_text">CODE</string>
+    <string name="otp_verification_text">OTP Verification Code</string>
+    <string name="otp_description_text">Verification Code Sent To</string>
+    <string name="swipe_indoor">Indoor Mode is On</string>
+    <string name="swipe_outdoor">Outdoor Mode is On</string>
+    <string name="swipe_food_mode">Food Mode is On</string>
+    <string name="swipe_furniture">Furniture Mode is on</string>
+    <string name="swipe_kitchen">Kitchen mode is on</string>
+</resources>

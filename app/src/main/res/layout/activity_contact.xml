@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Contacts.contactActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:padding="10dp">
+
+
+        <TextView
+            android:id="@+id/tv_battery_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:contentDescription="@null"
+            android:fontFamily="@font/opensbold"
+            android:text="0"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.869"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <android.gesture.GestureOverlayView
+        android:id="@+id/widgetGesture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/assistBtn"
+        android:layout_below="@id/header"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/gestureBox"
+        android:visibility="invisible" />
+
+    <com.agrawalsuneet.dotsloader.loaders.ZeeLoader
+        android:id="@+id/loader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:zee_animDuration="300"
+        app:zee_distanceMultiplier="4"
+        app:zee_dotsRadius="12dp"
+        app:zee_firstDotsColor="@color/blue_light"
+        app:zee_secondDotsColor="@color/blue"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"/>
+
+    <EditText
+        android:id="@+id/searchBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:singleLine="true"
+        android:padding="10dp"
+        android:layout_marginRight="20dp"
+        android:hint="Search Contact..."
+        android:fontFamily="@font/opensregular"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/input_design"
+        android:contentDescription="Click to search"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/contactList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/assistBtn"
+        android:layout_below="@+id/searchBox"
+        android:visibility="visible"
+        tools:listitem="@layout/item_contact" />
+
+
+    <Button
+        android:id="@+id/assistBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue_light"
+        android:contentDescription="@string/assistant"
+        android:fontFamily="@font/opensregular"
+        android:padding="30dp"
+        android:text="@string/assistant"
+        android:textSize="26sp" />
+
+</RelativeLayout>

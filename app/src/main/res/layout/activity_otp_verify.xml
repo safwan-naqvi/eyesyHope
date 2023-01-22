@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserCommon.otpVerifyActivity">
+
+    <ImageView
+        android:id="@+id/close_verify_screen"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:elevation="3dp"
+        android:padding="5dp"
+        android:src="@drawable/cross_icon"
+        app:tint="@color/black" />
+
+    <TextView
+        android:id="@+id/verify_otp_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/close_verify_screen"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/opensbold"
+        android:includeFontPadding="false"
+        android:text="@string/otp_code_text"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textSize="100sp" />
+
+    <TextView
+        android:id="@+id/verify_otp_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/verify_otp_title"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/opensbold"
+        android:includeFontPadding="false"
+        android:text="@string/otp_verification_text"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/verify_otp_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/verify_otp_desc"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:fontFamily="@font/opensregular"
+        android:includeFontPadding="false"
+        android:padding="20dp"
+        android:text="@string/otp_description_text"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <com.chaos.view.PinView
+        android:id="@+id/pin_view"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/verify_otp_msg"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:cursorVisible="true"
+        android:inputType="phone"
+        android:padding="20dp"
+        app:cursorColor="@color/black"
+        app:hideLineWhenFilled="true"
+        app:itemCount="6"
+        app:itemHeight="50dp"
+        app:itemRadius="5dp"
+        app:itemWidth="50dp"
+        app:lineColor="@color/blue"
+        app:lineWidth="3dp" />
+
+    <Button
+        android:id="@+id/btn_verify_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:background="@color/pink"
+        android:fontFamily="@font/opensbold"
+        android:onClick="callNextScreenFromOTP"
+        android:padding="40dp"
+        android:text="Verify Code"
+        android:textColor="@color/white"
+        android:textSize="28sp" />
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "742828277035",
+    "project_id": "eyesyhope-be8bc",
+    "storage_bucket": "eyesyhope-be8bc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:742828277035:android:4ee86fc7264a53efaa196e",
+        "android_client_info": {
+          "package_name": "com.example.eyesyhopefyp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "742828277035-d016b90pmjbku9i5ba3qnrm7j64ikp6m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.eyesyhopefyp",
+            "certificate_hash": "b96a1e59fa3afa3c18dd7a2346aa0232fe573166"
+          }
+        },
+        {
+          "client_id": "742828277035-9jotjd980v5g68m9eqv6b113boanjje3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCwV3xzzR3xzwVFvcnY6DFFTR16yfJlT8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "742828277035-9jotjd980v5g68m9eqv6b113boanjje3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

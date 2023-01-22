@@ -1,0 +1,18 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="org.tensorflow.lite.examples.detection">
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true">
+
+        <activity
+            android:name=".DetectorActivity2"
+            android:label="@string/tfe_od_app_name"
+            android:exported="true"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+    </application>
+</manifest>
